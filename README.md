@@ -10,7 +10,15 @@ DNS
 ---
 
 * TTL 60 -> 3600
-* A records : `192.30.252.153` and `192.30.252.154`
+
+```
+$ dig mushlee.com
+
+;; ANSWER SECTION:
+mushlee.com.		62	IN	A	192.30.252.153
+mushlee.com.		62	IN	A	192.30.252.154
+
+```
 
 Getting Started
 ---------------

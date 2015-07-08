@@ -1,0 +1,28 @@
+.music-panel.panel {
+  @include box-shadow(0 1px 1px rgba(255, 255, 255, 0));
+}
+
+.music-panel .panel-title > a {
+  color: $brand-primary;
+}
+
+span.close {
+  margin-top: -2px;
+  float: left;
+  padding-right: 8px;
+}
+
+div#iframeWrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+div#iframeWrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: none;
+}

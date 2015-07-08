@@ -1,0 +1,180 @@
+<h1>Lyrics</h1>
+<div class="panel-group" id="accordion-lyrics">
+
+  <% data.lyrics.each.with_index(1) do |i,index| %>
+    <div class="music-panel panel">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion-lyrics" href="#lyric-<%= index %>"><%= i.title%></a>
+        </h2>
+      </div>
+      <div div id="lyric-<%= index %>" class="panel-collapse collapse<%= ' in' if index == 1 %>">
+        <div class="panel-body"><%= i.lyric %></div>
+      </div>
+    </div>
+  <% end %>
+
+</div>
+
+</div><!-- /#main" -->
+
+<%#
+<h1>Videos</h1>
+
+<div class="panel-group" id="accordion-videos">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion-videos" href="#bayjungle20150201"><small>2015/02/01</small> 横浜 BAYJUNGLE</a>
+      </h2>
+    </div>
+    <div div id="bayjungle20150201" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <ul class="list-group video_list">
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/VbFmYjDQ8ac">ドメイン</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/LNVq-9LW4XI">あまい</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/b4fMT3Af4Zo">ようこそQシティー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/RQwgbSOTdzo">ベイビー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/1plqf3ULAZg">クロール</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/IigH1mG3ySY">さかなとねこ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion-videos" href="#club25120150125"><small>2015/01/25</small> 下北沢 CLUB 251</a>
+      </h2>
+    </div>
+    <div div id="club25120150125" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul class="list-group video_list">
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/zCwDydup-V8">ミルク</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/rHcxQyM6vws">ウェンディー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/Yn0jNKuSFKo">あまい</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/y2be1jPokXo">バニー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/BArv3SUdjdA">ようこそQシティー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/BArv3SUdjdA">さかなとねこ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion-videos" href="#waver20141223"><small>2014/12/23</small> 下北沢 WAVER</a>
+      </h2>
+    </div>
+    <div div id="waver20141223" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul class="list-group video_list">
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/zCwDydup-V8">ようこそQシティー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/rHcxQyM6vws">ドメイン</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/Yn0jNKuSFKo">あまい</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/y2be1jPokXo">ミルク</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/BArv3SUdjdA">さかなとねこ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion-videos" href="#club25120141018"><small>2014/10/18</small> 下北沢 CLUB 251</a>
+      </h2>
+    </div>
+    <div div id="club25120141018" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul class="list-group video_list">
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/otYVqVTxN44">ようこそQシティー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/gotmQxCqhH8">バニー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/DOMh9i8xgv4">クロール</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/ZQJxph_U-dg">ベイビー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/BQ63FEECd9c">ミルク</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/2-WPYYuDpNw">さかなとねこ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion-videos" href="#doors20140812"><small>2014/08/12</small> 初台 Doors Live</a>
+      </h2>
+    </div>
+    <div div id="doors20140812" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul class="list-group video_list">
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/HZ66NG28oNw">クロール</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/_bE_R_XzpR8">あまい</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/U6zPJEWmf-8">ミルク</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/aTvGH7Hvf7E">ドメイン</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/MFEi0JZSkIE">バニー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/01PZitPIYCk">ベイビー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/tTecYb-aB80">さかなとねこ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion-videos" href="#doors20140512"><small>2014/05/12</small> 初台 Doors Live</a>
+      </h2>
+    </div>
+    <div div id="doors20140512" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul class="list-group video_list">
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/BW2xDp6k2Lc">あまい</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/0z4H8UOx1PM">バニー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/lb94v9U4WeY">ミルク</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/MvtsaD6w340">クロール</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/PT3sQkgSRpE">さかなとねこ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion-videos" href="#departure20130615"><small>2013/06/15</small> 川越 Departure Live</a>
+      </h2>
+    </div>
+    <div id="departure20130615" class="panel-collapse collapse">
+      <!-- div id="collapseTwo" class="panel-collapse collapse" -->
+      <div class="panel-body">
+        <ul class="list-group video_list">
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/qHY2U1thSHs">あまい</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/c_zszLrQg88">バニー</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/ZaIDISdtKbI">クロール</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/8tiZoCqGxJo">ドメイン</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/3f406egTvn8">きっと</a></li>
+          <li class="list-group-item"><a data-toggle="modal" data-target="#video_modal" href="https://www.youtube.com/embed/ooxAGXlxzlo">さかなとねこ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+%>
+
+<!-- Modal -->
+<div class="modal fade" id="video_modal" tabindex="-1" role="dialog" aria-labelledby="videoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="videoLabel">あまい</h4>
+      </div>
+      <div class="modal-body">
+        <div id="iframeWrap">
+          <!-- iframe id="video" src="" frameborder="0" allowfullscreen></iframe -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="close">&times;</span> Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  @include text-shadow(1px 1px 6px $text-shadow-color, 1px -1px 6px $text-shadow-color, -1px 1px 6px $text-shadow-color, -1px -1px 6px $text-shadow-color);
+  
+  //background-image: url("../images/top_image.jpg");
+  //background-image: url("../images/web_bg.jpg");
+  background-image: url("/images/web_bg.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  @include animation(open_ANIME 1s linear 1);
+}
+@include keyframes(open_ANIME) { 0%{  opacity:0; } 100%{ opacity:1; } }
+
+a {
+  text-decoration: underline;
+  @include text-shadow(1px 1px 6px $a-text-shadow-color, 1px -1px 6px $a-text-shadow-color, -1px 1px 6px $a-text-shadow-color, -1px -1px 6px $a-text-shadow-color);
+}
+
+
+@import "application/index";
+@import "application/girlkinoko";
+@import "application/bottom_kinoko";
+@import "application/header";
+@import "application/footer";
+@import "application/music";
+@import "application/profile";
+@import "application/photos";
+

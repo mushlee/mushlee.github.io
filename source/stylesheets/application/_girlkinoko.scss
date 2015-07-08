@@ -1,0 +1,81 @@
+.girlKinoko {
+
+  //right: 30%;
+  //bottom: 0;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  //margin: 0 auto;
+  
+  @media (max-width: $screen-xs-max) {left: 50%;}
+
+  
+  //red mushroom
+  .redKinoko {
+    position: absolute;
+    bottom: 150px;
+    .redKinokoImg{
+      position: absolute;
+      top: 6px;
+      left: 7px;
+      width: 150px;
+      height: 150px;
+      background-image: url("../images/kinoko_girl.png");
+      background-position: -51px 0;
+    }
+  
+    &.play .redKinokoImg{
+      @include transform-origin(50% 100%);
+      @include animation(redKinoko_ANIME 4s linear infinite);
+    }
+  }
+
+  // girl all
+  .kinoko_girl {
+    position: absolute;
+    bottom: 63px;
+    left: 37px;
+
+    // girl head
+    .head{
+      position: absolute;
+      top: 0;
+      left: 9px;
+      width: 40px;
+      height: 48px;
+      background-image: url("../images/kinoko_girl.png");
+      background-position: -6px 100px;
+    }
+
+    //&.play .head_ANIME .head{
+    &.play .head_ANIME .head{
+      @include transform-origin(50% 65%);
+      @include animation(head_ANIME 2s linear infinite);
+    }
+
+    // girl body
+    .body{
+      position: absolute;
+      top: 33px;
+      left: 0;
+      width: 50px;
+      height: 46px;
+      background-image: url("../images/kinoko_girl.png");
+      background-position: 0 50px;
+    }
+  }
+}
+
+@include keyframes(redKinoko_ANIME) {
+  0%{ transform:rotate(0deg); }
+  30%{ transform:rotate(5deg); }
+  80%{ transform:rotate(-5deg); }
+  100%{ transform:rotate(0deg); }
+}
+
+@include keyframes(head_ANIME) {
+  0%    { transform:rotate(0deg); }
+  25%   { transform:rotate(5deg); }
+  75%   { transform:rotate(-10deg); }
+  100%  { transform:rotate(0deg); }
+}

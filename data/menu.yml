@@ -1,0 +1,27 @@
+- name:   Home
+  title:  ホーム
+  link:   /
+
+###- name:   News
+###  title:  Mushleeからのお知らせ
+###  link:   news.html
+###
+- name:   Music
+  title:  Mushleeの曲
+  link:   music.html
+
+- name:   Profile
+  title:  Mushleeのプロフィール
+  link:   profile.html
+
+- name:   Photos
+  title:  Mushleeの写真
+  link:   photos.html
+
+- name:   Contact
+  title:  Mushleeに連絡する
+  link:   contact.html
+
+- name:   Blog
+  title:  Blogを見る
+  link:   http://mushlee.hatenablog.com/

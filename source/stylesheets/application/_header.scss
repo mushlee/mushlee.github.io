@@ -1,0 +1,16 @@
+#header-wraper {
+  margin-bottom: 40px;
+  .navbar-header {
+    color: $brand-primary;
+    span {
+      text-decoration: underline;
+    }
+  }
+  .navbar-brand {
+    padding: 0;
+  }
+}
+
+.header-logo {
+  height: 50px;
+}

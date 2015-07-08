@@ -1,0 +1,17 @@
+@import "compass";
+@import "application-variables";
+@import "bootstrap-custom-variables";
+// 全ページ共通
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "application";
+//@import "old";
+
+// 各ページのスタイル
+//@import "application/index"
+//h1 {
+//  @include border-radius(10px);
+//  background-color: #000;
+//  color: #fff;
+//}
+

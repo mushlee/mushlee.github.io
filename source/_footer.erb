@@ -1,0 +1,41 @@
+<div id="footer-inner">
+
+  <ul class="list-inline">
+    <% data.menu.each do |i| %>
+      <li><a href="<%= i.link %>" title="<%= i.title %>"><%= i.name %></a></li>
+    <% end %>
+  </ul>
+
+  <div>©Mushlee</div>
+</div><!-- /#footer-inner" -->
+
+<% if page_classes == 'index' %>
+<% else %>
+  <div class="kinoko_girl_walk">
+    <div class="kinoko_girl play">
+      <div class="all_FRAME_ANIME">
+        <div class="leftHand_ANIME">
+          <div class="leftHand"></div>
+        </div>
+        <div class="body_ANIME">
+          <div class="body"></div>
+        </div>
+        <div class="head_ANIME">
+          <div class="head"></div>
+        </div>
+        <div class="rightHand_ANIME">
+          <div class="rightHand"></div>
+        </div>
+        <div class="rightFoot_ANIME">
+          <div class="rightFoot"></div>
+        </div>
+        <div class="leftFoot_ANIME">
+          <div class="leftFoot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %><!-- kinoko_girl_walk -->
+<a class="kinoko play start" href="#" title="pagetop">pagetop</a>
+
+

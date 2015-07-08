@@ -1,0 +1,18 @@
+//bootstrap
+$brand-primary:         #E50004; // #337ab7
+$body-bg:               rgba(#fff, 0);
+
+$panel-bg:                    $body-bg;
+$panel-inner-border:          $body-bg;
+$panel-footer-bg:             $body-bg;
+
+//** Global textual link color.
+$link-color:            $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      lighten($link-color, 15%);
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+//other
+$text-shadow-color: #fff;
+$a-text-shadow-color:  #fff;

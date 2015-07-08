@@ -1,0 +1,69 @@
+---
+title: HOME
+meta_keywords: Mushlee,マシュリー,下北沢,バンド,ライブ,女性ボーカル,女の子ボーカル,ギター,ベース,ドラム
+meta_description: 下北沢で活動中の Mushlee ( マシュリー ) のwebサイトです。ライブなどのお知らせ、曲やメンバーの紹介をしています。
+pageable: true
+per_page: 10
+---
+<div class="jumbotron main-image">
+    <h1>Mushlee</h1>
+
+    <p>
+      Mushleeは下北沢で活動している
+      <br class="visible-xs">
+      女の子がボーカルのバンドです。
+      <br>
+      ポップな曲をメンバー４人で作っています。
+    </p>
+
+    <ul class="list-inline">
+      <% data.menu.each do |i| %>
+        <% unless i.link == "index.html" then %>
+          <li><%= link_to i.name, i.link, title: i.title %></li>
+        <% end %>
+      <% end %>
+    </ul>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="notice">
+        <%#
+        <h3>ライブ</h3>
+        <dl class="dl-horizontal">
+          <dt>2015/07/05</dt><dd>下北沢WAVER</dd>
+          <dt>2015/04/05</dt><dd>下北沢WAVER</dd>
+        </dl>
+      %>
+
+        <h3>お知らせ</h3>
+        <dl class="dl-horizontal">
+          <dt>2015/07/01</dt><dd><a href="">Line Music</a>でアルバムパレードを配信しました！</dd>
+          <dt>2015/07/01</dt><dd><a href="">iTunes(& Apple Music)</a>でアルバムパレードを配信開始しました！</dd>
+        </dl>
+
+      </div>
+    </div>
+    <div class="col-sm-4 girlKinoko-wraper">
+      <div class="girlKinoko">
+        <div class="redKinoko play">
+          <div class="redKinokoImg"></div>
+        </div>
+
+        <div class="kinoko_girl play">
+          <div class="all_FRAME_ANIME">
+            <div class="body_ANIME">
+              <div class="body"></div>
+            </div>
+            <div class="head_ANIME">
+              <div class="head"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- .container -->

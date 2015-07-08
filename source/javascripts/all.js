@@ -1,0 +1,10 @@
+//= require jquery
+//= #require underscore
+//= #require json2-js
+//= #require backbone
+//= #require backbone.marionette
+//= require bootstrap-sprockets
+//= #require change_bg
+//= #require index
+//= require music
+//= require profile

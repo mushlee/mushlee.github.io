@@ -1,7 +1,7 @@
-<h1>Lyrics</h1>
+<h1>Songs</h1>
 <div class="panel-group" id="accordion-lyrics">
 
-  <% data.lyrics.each.with_index(1) do |i,index| %>
+  <% data.songs.each.with_index(1) do |i,index| %>
     <div class="music-panel panel">
       <div class="panel-heading">
         <h2 class="panel-title">
@@ -9,7 +9,16 @@
         </h2>
       </div>
       <div div id="lyric-<%= index %>" class="panel-collapse collapse<%= ' in' if index == 1 %>">
-        <div class="panel-body"><%= i.lyric %></div>
+        <div class="panel-body">
+          <% if i.soundcloud.present? %>
+            <p>
+            <iframe width="80%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<%= i.soundcloud%>&amp;visual=false&amp;color=E50004&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </p>
+          <% end %>
+          <p>
+          <%= i.lyric %>
+          </p>
+        </div>
       </div>
     </div>
   <% end %>
@@ -156,7 +165,6 @@
     </div>
   </div>
 </div>
-%>
 
 <!-- Modal -->
 <div class="modal fade" id="video_modal" tabindex="-1" role="dialog" aria-labelledby="videoLabel" aria-hidden="true">
@@ -178,3 +186,4 @@
   </div>
 </div>
 
+%>

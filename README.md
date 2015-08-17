@@ -6,20 +6,6 @@ Website of Mushlee.
 * http://mushlee.com/
 * https://mushlee.github.io/
 
-DNS
----
-
-* TTL 60 -> 3600
-
-```
-$ dig mushlee.com
-
-;; ANSWER SECTION:
-mushlee.com.		62	IN	A	192.30.252.153
-mushlee.com.		62	IN	A	192.30.252.154
-
-```
-
 Getting Started
 ---------------
 
@@ -37,4 +23,28 @@ Build & Deploy
 * `middleman build`
 * `middleman deploy`
 
+
+Update menu
+--------------
+
+* `data/menu.yml`
+
+
+Update songs
+----------
+
+* `data/songs.yml`
+
+Todo
+----
+
+* Songs
+* Mushlog
+
+soundcloud
+-----------
+
+```
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src=""></iframe>
+```
 

@@ -1,0 +1,14 @@
+<div class="article-footer">
+  <ul class="list-inline">
+    <% if prev_article = current_article.previous_article %>
+      <li>
+        <%= link_to '<span class="glyphicon glyphicon-backward" aria-hidden="true"></span> '+ prev_article.title, prev_article %>
+      </li>
+    <% end %>
+    <% if next_article = current_article.next_article %>
+      <li>
+        <%= link_to next_article.title + ' <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>', next_article %>
+      </li>
+    <% end %>
+  </ul>
+</div>

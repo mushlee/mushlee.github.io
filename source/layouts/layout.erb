@@ -34,14 +34,24 @@ ga('send', 'pageview');
     
     <% if page_classes == 'index' %>
     <% else %>
-      <%= partial "header" %>
+      <%= partial "partials/header" %>
+    <% end %>
+
+    <% if is_blog_article? %>
+      <%= partial "partials/article_header" %>
+      <div class="container article-inner">
     <% end %>
 
     <div id="main" role="main">
       <%= yield %>
     </div>
+
+    <% if is_blog_article? %>
+      </div><%# article-inner %>
+      <%= partial "partials/article_footer" %>
+    <% end %>
     
-    <%= partial "footer" %>
+    <%= partial "partials/footer" %>
 
   </body>
 </html>

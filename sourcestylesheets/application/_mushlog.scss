@@ -1,0 +1,19 @@
+.article-inner {
+  max-width: 640px;
+
+  img {
+    max-width: 100%;
+  }
+  p {
+    padding: 8px 0;
+    font-size: 20px;
+  }
+  
+}
+.article-footer {
+    padding: 8px 0;
+    li {
+      padding: 4px 12px;
+      font-size: 18px;
+    }
+}

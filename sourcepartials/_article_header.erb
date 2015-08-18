@@ -1,0 +1,9 @@
+<div class="container">
+  <h1><%= current_article.title %><br><small><%= current_article.date.strftime('%Y/%m/%d') %></small></h1>
+
+  <% if current_article.data.image.present? %>
+    <p><img class="img-thumbnail" src="<%= current_article.data.image %>" alt="<%= current_article.data.title %>"></p>
+  <% else %>
+    <p><img src="<%= image_path('icon240.png') %>" alt="<%= current_article.data.title %>"></p>
+  <% end %>
+</div>

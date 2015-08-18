@@ -1,0 +1,65 @@
+---
+pageable: true
+per_page: 12
+---
+
+<h1>Mushlog<br><small>ライブやリリースのお知らせからどうでもいいことまで<br>Mushleeのログ(記録)</small></h1>
+
+
+<% if paginate && num_pages > 1 %>
+  <p><%= page_number %> / <%= num_pages %></p>
+  <p>
+  <% if prev_page %>
+    <%= link_to '<span class="glyphicon glyphicon-backward" aria-hidden="true"></span> 前のページ', prev_page %>
+  <% end %>
+  <% if next_page %>
+    <%= link_to '次のページ <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>', next_page %>
+  <% end %>
+  </p>
+<% end %>
+
+<div class="container">
+  <% page_articles.each_with_index do |article, i| %>
+<% if (i+1)%4 === 1  %>
+  <div class="row">
+  <% end %>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <% if article.data.image.present? %>
+        <% dir, file = File::split(article.url) %><br>
+        <% thumbnailImg = dir + '/' + article.data.image %>
+      <% else %>
+        <% thumbnailImg = image_path('icon240.png') %>
+      <% end%>
+      <img class="img-circle" src="<%= thumbnailImg %>" alt="<%= article.data.title %>">
+      <div class="caption">
+        <h3><small><time><%= article.date.strftime('%Y/%m/%d') %></time></small><br><%= link_to article.title, article %></h3>
+        <%#= article.body %>
+        <%#= article.summary %>
+        <p><%= article.data.meta_description %></p>
+        <p><a href="<%= article.url %>">もっと読む</a></p>
+      </div>
+    </div>
+  </div>
+  <% if (((i+1)%2 === 0) && ((i+1)%4 != 0)) %>
+    <div class="clearfix visible-sm-block"></div>
+  <% end %>
+<% if (i+1)%4 === 0 || page_articles.length === (i + 1)  %>
+    </div>
+  <% end %>
+
+<% end %>
+</div>
+
+
+<% if paginate %>
+  <p>
+  <% if prev_page %>
+    <%= link_to '<span class="glyphicon glyphicon-backward" aria-hidden="true"></span> 前のページ', prev_page %>
+  <% end %>
+  <% if next_page %>
+    <%= link_to '次のページ <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>', next_page %>
+  <% end %>
+  </p>
+  <p><%= page_number %> / <%= num_pages %></p>
+<% end %>

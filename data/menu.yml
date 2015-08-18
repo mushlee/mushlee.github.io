@@ -8,19 +8,23 @@
 ###
 - name:   Music
   title:  Mushleeの曲
-  link:   music.html
+  link:   /music.html
 
 - name:   Profile
   title:  Mushleeのプロフィール
-  link:   profile.html
+  link:   /profile.html
 
 - name:   Photos
   title:  Mushleeの写真
-  link:   photos.html
+  link:   /photos.html
+
+- name:   Mushlog
+  title:  Mushleeの記録
+  link:   /mushlog.html
 
 - name:   Contact
   title:  Mushleeに連絡する
-  link:   contact.html
+  link:   /contact.html
 
 - name:   Mushpod
   title:  MushleeのPodcast

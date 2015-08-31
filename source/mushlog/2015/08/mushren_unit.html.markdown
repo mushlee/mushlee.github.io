@@ -11,6 +11,6 @@ image: mushren_unit_01.jpg
 
 それからバンド内でモリときーくんのユニットを初披露しました。
 
-![写真](mushren_unit_02.jpg)
+![ユニット画像](mushren_unit_02.jpg)
 
 そのうちどこかの路上で聞けるかも。

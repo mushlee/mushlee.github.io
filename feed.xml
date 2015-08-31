@@ -5,10 +5,46 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2015-08-23T19:50:00+09:00</updated>
+  <updated>2015-08-30T16:18:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>下北沢のカフェ Cafe SEJOUR(カフェセジュアール)で暇つぶし</title>
+    <link rel="alternate" href="http://blog.url.com/mushlog/2015/08/sejour.html"/>
+    <id>http://blog.url.com/mushlog/2015/08/sejour.html</id>
+    <published>2015-08-30T16:18:00+09:00</published>
+    <updated>2015-08-31T15:50:18+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;がんちゃんが夕方まで暇だというのでそれに付き合って、下北沢のカフェで暇つぶししました。&lt;/p&gt;
+
+&lt;p&gt;下北沢駅北口近くのシャノアールの跡地にできたCafe SEJOUR (カフェセジュアール)で、
+ミックスジュースとアイスコーヒーを飲みながらMushleeの今後の練習方法について考えました。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>多摩レイクサイドFMのα-sense'sのα-ch！に出演させていただきました！</title>
+    <link rel="alternate" href="http://blog.url.com/mushlog/2015/08/lakesidefm.html"/>
+    <id>http://blog.url.com/mushlog/2015/08/lakesidefm.html</id>
+    <published>2015-08-30T10:30:00+09:00</published>
+    <updated>2015-08-31T15:40:17+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="http://tamalakesidefm.jimdo.com/"&gt;多摩レイクサイドFM&lt;/a&gt;のα-sense'sのα-ch！に出演させていただきました！&lt;/p&gt;
+
+&lt;p&gt;α-sense'sのまこと（真）さんもジイさんも大変面白い方々でとても楽しく収録ができました。&lt;/p&gt;
+
+&lt;p&gt;ラジオの放送日は一回目が9/10(5:00、11:00、15:00)、二回目が9/17(5:00、11:00、15:00)で、多摩レイクサイドFMのコールサインはJOZZ3BG-FM、 周波数は79.0 MHzです。&lt;/p&gt;
+
+&lt;p&gt;ラジオじゃなくても&lt;a href="http://alphachannel.seesaa.net/"&gt;α-sense'sのα-ch！（アルファチャンネル）&lt;/a&gt;のwebサイトや&lt;a href="https://itunes.apple.com/jp/podcast/sensesnoa-ch!-arufachanneru/id597751364?mt=2"&gt;ポッドキャスト&lt;/a&gt;でも一週間遅れぐらいで聞くことができるそうです。&lt;/p&gt;
+
+&lt;p&gt;是非聞いてみてください。&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>iPhoneが...</title>
     <link rel="alternate" href="http://blog.url.com/mushlog/2015/08/warephone.html"/>
@@ -96,39 +132,6 @@
     <content type="html">&lt;p&gt;下北沢のKALDI決算セールしてるみたいです。&lt;/p&gt;
 
 &lt;p&gt;何買おうかなー。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>MusicでMushleeの曲が聞けるようになりました</title>
-    <link rel="alternate" href="http://blog.url.com/mushlog/2015/08/songs_start.html"/>
-    <id>http://blog.url.com/mushlog/2015/08/songs_start.html</id>
-    <published>2015-08-17T00:00:00+09:00</published>
-    <updated>2015-08-19T08:19:18+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;今までMushleeの曲はitunesやAmazonなどのダウンロードサイトや、Apple Music や Line Music などのストリーミングサービスでしか聞けなかったのですが、このサイトでもMushleeの曲を聞けるようになりました。&lt;/p&gt;
-
-&lt;p&gt;このサイトのMusicのページで曲名を選択すると、音源があるものはプレイヤーが表示されるようになっています。&lt;/p&gt;
-
-&lt;p&gt;この機会にMushleeのポップな曲をぜひ聞いてみてください。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>下北沢で夏祭りらしい</title>
-    <link rel="alternate" href="http://blog.url.com/mushlog/2015/08/natsumatsuri.html"/>
-    <id>http://blog.url.com/mushlog/2015/08/natsumatsuri.html</id>
-    <published>2015-08-15T17:56:00+09:00</published>
-    <updated>2015-08-19T08:05:32+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;下北沢を歩いてたら夏祭りやってました。&lt;/p&gt;
-
-&lt;p&gt;この夏祭りは2013年にはじまって、「シモキタ音頭」もあるらしい。&lt;/p&gt;
-&lt;div class="embed-responsive embed-responsive-16by9"&gt;
-&lt;iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JzF_nCGorao" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
-&lt;/div&gt;
 </content>
   </entry>
 </feed>
